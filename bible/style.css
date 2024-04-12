@@ -1,0 +1,45 @@
+body {
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+hr {
+    height: 5px;
+    width: 90%;
+    border: 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(172,172,172,1) 10%, rgba(172,172,172,1) 90%, rgba(255,255,255,1) 100%);
+}
+.header {
+    color: white;
+    background-color: red;
+}
+.siteendcont {
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.cont {
+    size: 50px;
+    padding: 5%;
+}
+.title {
+    font-size: xx-large;
+}
+.verse {
+    font-family: 'Times New Roman', Times, serif;
+}
+.wrapper1 {
+    display: flex;
+    padding-bottom: 5%;
+}
+.wrapper2 {
+    display: flex;
+    padding-bottom: 5%;
+    vertical-align: top;
+}
+.wrapper3 {
+    display: flex;
+    padding-bottom: 5%;
+    vertical-align: top;
+}
