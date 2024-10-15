@@ -10,6 +10,14 @@ hr {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(172,172,172,1) 10%, rgba(172,172,172,1) 90%, rgba(255,255,255,1) 100%);
 }
+caption {
+    padding-top: 30px;
+}
+td {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
 .header {
     color: white;
     background-color: red;
@@ -19,27 +27,7 @@ hr {
     padding-left: 25px;
     padding-right: 25px;
 }
-.cont {
-    size: 50px;
-    padding: 5%;
-}
-.title {
-    font-size: xx-large;
-}
-.verse {
-    font-family: 'Times New Roman', Times, serif;
-}
-.wrapper1 {
-    display: flex;
-    padding-bottom: 5%;
-}
-.wrapper2 {
-    display: flex;
-    padding-bottom: 5%;
-    vertical-align: top;
-}
-.wrapper3 {
-    display: flex;
-    padding-bottom: 5%;
-    vertical-align: top;
+.verses {
+    margin: auto;
+    width: 60%;
 }
