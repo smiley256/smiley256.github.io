@@ -1,0 +1,30 @@
+/*@font-face {
+    font-family: Catull;
+    src: url(./catull.ttf);
+}*/
+body {
+    margin: auto;
+}
+.logo .e {
+    color: #E32002;
+}
+.logo .g {
+    color: #3274D9;
+}
+.logo .l {
+    color: #16931C;
+}
+.logo .o {
+    color: #F5E520;
+}
+.logo .o-alt {
+    color: #E32002;
+}
+.logo .mark {
+    color: #3274D9;
+}
+
+/*sizes*/
+.xxxl {
+    font-size: 500%;
+}
