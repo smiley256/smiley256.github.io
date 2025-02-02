@@ -1,3 +1,6 @@
 body {
     margin: auto;
 }
+#content {
+    padding: 10px;
+}
