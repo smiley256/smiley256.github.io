@@ -1,0 +1,46 @@
+:root {
+    --gray: #F0F0F0;
+    --border: #B8B8B8;
+    --background: #CEE3F8;
+}
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown {
+    background-color: var(--gray);
+    border: none;
+    cursor: pointer;
+}
+.logo {
+    padding: 0.0625rem;
+    padding-left: 0.125rem;
+}
+.menu {
+    background-color: var(--background);
+}
+.navbar {
+    background-color: var(--gray);
+    border: var(--border) 1px solid;
+}
+.navbar text {
+    cursor: default;
+}
+.navbar a {
+    font-size: 0.625rem;
+    color: black;
+    text-decoration: none;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.navbar a.highlight {
+    font-weight: bold;
+    color: orangered;
+}
+.navbar .dropdown {
+    font-size: 0.625rem;
+}
+#my-subreddits {
+    padding-right: 1rem;
+}

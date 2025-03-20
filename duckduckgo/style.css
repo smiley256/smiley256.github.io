@@ -1,0 +1,71 @@
+:root {
+    --bg-color: #1F1F1F;
+    --bg-highlight-color: #000000;
+    --main-color: #dddddd;
+    --rounded-corners: 10rem;
+    --transparent: rgba(0, 0, 0, 0);
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+body {
+    margin: 0;
+    background-color: var(--bg-highlight-color);
+    color: var(--main-color);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    animation: fade 2s;
+}
+button {
+    font-size: 5rem;
+    padding: 1.5rem 5rem;
+    border: none;
+    border-radius: var(--rounded-corners);
+    background-color: var(--bg-highlight-color);
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 750ms;
+}
+button:hover, input[type="text"]:hover, input[type="text"]:focus {
+    box-shadow: 0 0 2rem var(--main-color);
+    transition: 750ms;
+}
+button:active {
+    font-size: 4.5rem;
+    transition: 750ms;
+    transition-timing-function: cubic-bezier(0.5, 1.0, 1.0, 0.5);
+}
+h1 {
+    font-size: 8.5rem;
+    margin-top: 0;
+}
+hr {
+    width: 75%;
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--transparent), var(--main-color), var(--transparent));
+    margin: 2.5rem 0 1.5rem;
+}
+input[type="text"] {
+    font-size: 4rem;
+    background-color: var(--bg-highlight-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: var(--rounded-corners);
+    transition: 750ms;
+    padding: 2rem;
+    outline: none;
+    cursor: pointer;
+}
+input[type="text"]:focus {
+    cursor: text;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle, var(--bg-color), var(--bg-highlight-color));
+    width: 100%;
+    height: 100vh;
+}
