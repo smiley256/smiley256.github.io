@@ -7,3 +7,9 @@ function makeSearch() {
         window.location.assign("https://duckduckgo.com/?q=" + encodeURIComponent(search_input));
     }
 }
+
+search.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        makeSearch();
+    }
+});
