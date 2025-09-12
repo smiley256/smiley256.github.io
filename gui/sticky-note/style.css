@@ -1,0 +1,21 @@
+:root {
+    --color-bg: #ffff88;
+    --color-accent: #ff0000;
+    --color-underline: #888888;
+
+    --scale-underline: 0.075rem;
+    --scale-underline-offset: 0.4rem;
+}
+body {
+    background-color: var(--color-bg);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-left: var(--color-accent) var(--scale-underline) solid;
+}
+p {
+    margin-left: 2rem;
+    text-decoration: underline var(--color-underline) var(--scale-underline);
+    text-underline-offset: var(--scale-underline-offset);
+}
+a {
+    color: var(--color-accent);
+}

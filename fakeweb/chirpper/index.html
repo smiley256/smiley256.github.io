@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/5f848097d9.js" crossorigin="anonymous"></script>
+    <title>Chirpper</title>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <h1><span style="color: #08f;">Chirpper<span class="padding-left"><i class="fa-brands fa-twitter"></i></span></span></h1>
+            <ul>
+                <li><a href=""><span class="padding-right"><i class="fa-solid fa-house"></i></span>Home</a></li>
+                <li><a href=""><span class="padding-right"><i class="fa-solid fa-bell"></i></span>Notifications</a></li>
+                <li><a href=""><span class="padding-right"><i class="fa-solid fa-envelope"></i></span>Messages</a></li>
+                <li><a href=""><span class="padding-right"><i class="fa-brands fa-twitter"></i></span>Premium</a></li>
+                <li><a href=""><span class="padding-right"><i class="fa-solid fa-user"></i></span>Profile</a></li>
+            </ul>
+            <button class="button" id="post" onclick="postMsg()">Post</button>
+        </div>     
+    </div>
+
+    <div class="content">
+        <div class="post-box">
+            <textarea class="post" placeholder="Complain about something!" id="textbox"></textarea>
+            <div style="display: flex; justify-content: flex-end; width: 50rem;"><button class="button" disabled>Post</button></div>
+        </div>
+        <div id="chirps">
+
+            
+            <div class="chirp">
+            
+                <p class="user">
+                    <span>
+                        <i class="fa-solid fa-user"></i><span class="name">john doe</span><span class="handle">@jdoe</span>
+                    </span>
+                    <span><i class="fa-solid fa-ellipsis"></i></span>
+                </p>
+            
+                <p class="chirp-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, facere!</p>
+            
+                <p class="chirp-data">
+                    <span>
+                        <i class="fa-solid fa-comment"></i> 1.1k <i class="fa-solid fa-retweet"></i> 38 <i
+                            class="fa-solid fa-heart"></i> 2.8k <i class="fa-solid fa-chart-simple"></i> 241k
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-bookmark"></i> <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </span>
+                </p>
+            
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
+
+</body>
+</html>

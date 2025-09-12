@@ -1,0 +1,128 @@
+:root {
+    --font: 'Arial', sans-serif;
+    --pc: #c0c0c0;
+    --bgc: #0c0c0c;
+    --phlc: #08f;
+    --shlc: #fff;
+    --padding: 0.5rem;
+    --2xpadding: calc(var(--padding) * 2);
+    --transistion: 250ms;
+    --content-width: 50rem;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--pc);
+    background-color: var(--bgc);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.padding-left {
+    margin-left: var(--padding);
+}
+.padding-right {
+    margin-right: var(--padding);
+}
+
+.content {
+    margin-left: 15.6rem;
+}
+.sidebar {
+    /* Layout and positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 15.6rem;
+
+    /* Appearance */
+    background-color: #000;
+    color: #fff;
+
+    /* Behavior */
+    overflow-x: hidden;
+
+    /* Layering */
+    z-index: 1000;
+}
+.sidebar-content {
+    padding: 1rem;
+}
+.sidebar-content ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+.sidebar-content ul li a {
+    color: var(--pc);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.button {
+    background-color: var(--shlc);
+    color: var(--bgc);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 3rem;
+    margin-left: 2.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transistion);
+}
+.button:hover {
+    background-color: var(--pc);
+    transition: var(--transistion);
+}
+.button:disabled {
+    background-color: var(--pc);
+    cursor: not-allowed;
+    transition: var(--transistion);
+}
+
+.post {
+    background-color: var(--bgc);
+    color: var(--pc);
+    border: 1px solid var(--pc);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    width: var(--content-width);
+    height: 10rem;
+    font-size: 1.5rem;
+    font-family: var(--font);
+    resize: none;
+    transition: var(--transistion);
+}
+.post:focus {
+    outline: none;
+    border-color: var(--phlc);
+    transition: var(--transistion);
+    box-shadow: 0 0 1rem #08f;
+}
+
+.post-box {
+    border-bottom: 0.0625rem solid var(--pc);
+    width: min-content;
+    padding-bottom: var(--2xpadding);
+}
+
+.chirp {
+    width: var(--content-width);
+}
+.user, .chirp-data {
+    display: flex;
+    justify-content: space-between;
+}
+.name {
+    font-weight: bold;
+    color: var(--shlc);
+    margin-left: var(--padding);
+    margin-right: var(--padding);
+}

@@ -1,0 +1,59 @@
+:root {
+    --pc: #fff;
+    --sc: #000;
+
+    --red: #f44;
+    --blue: #44f;
+    --dblue: #33c;
+
+    --transition: 250ms;
+}
+body {
+    background-color: var(--pc);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header {
+    background-color: var(--red);
+    color: var(--pc);
+
+    padding: 1%;
+}
+
+.log {
+    padding: 1%;
+    overflow-y: scroll;
+    height: 40vh;
+}
+.age {
+    color: var(--blue);
+}
+
+.options {
+    background-color: var(--blue);
+}
+.option {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--blue);
+    color: var(--pc);
+    transition: var(--transition);
+
+    border: none;
+    border-left: 0.2rem solid var(--dblue);
+    border-right: 0.2rem solid var(--dblue);
+
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.option:hover {
+    background-color: var(--dblue);
+    cursor: pointer;
+    transition: var(--transition);
+}
